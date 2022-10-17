@@ -6,4 +6,4 @@ Depends: mobilesubstrate
 Maintainer: Avangelista <no>
 Architecture: iphoneos-arm
 Section: Tweaks
-Version: 0.0.2
+Version: 0.0.3
