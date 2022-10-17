@@ -1,0 +1,9 @@
+Package: com.avangelista.denyonce
+Name: DenyOnce
+Author: Avangelista <no>
+Description: Deny access to an app attempting to access your location once, to make it ask again next time.
+Depends: mobilesubstrate
+Maintainer: Avangelista <no>
+Architecture: iphoneos-arm
+Section: Tweaks
+Version: 0.0.2
