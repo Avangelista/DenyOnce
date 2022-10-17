@@ -14,11 +14,15 @@
     window.rootViewController = [UIViewController new];
     window.windowLevel = UIWindowLevelAlert + 1;
 
-    NSString *appName = [[NSBundle mainBundle] localizedInfoDictionary][@"CFBundleDisplayName"];
+    NSDictionary *bundleInfo = [[NSBundle mainBundle] infoDictionary];
+    NSString *appName = [bundleInfo objectForKey:@"CFBundleDisplayName"];
     NSString *message = [NSString stringWithFormat:@"“%@” is requesting access to your location.", appName];
 
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message
+preferredStyle:UIAlertControllerStyleAlert];
+ 
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
+
     UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
@@ -40,11 +44,15 @@
     window.rootViewController = [UIViewController new];
     window.windowLevel = UIWindowLevelAlert + 1;
 
-    NSString *appName = [[NSBundle mainBundle] localizedInfoDictionary][@"CFBundleDisplayName"];
+    NSDictionary *bundleInfo = [[NSBundle mainBundle] infoDictionary];
+    NSString *appName = [bundleInfo objectForKey:@"CFBundleDisplayName"];
     NSString *message = [NSString stringWithFormat:@"“%@” is requesting access to your location.", appName];
 
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message
+preferredStyle:UIAlertControllerStyleAlert];
+ 
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
+
     UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
