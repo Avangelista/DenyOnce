@@ -23,7 +23,7 @@ preferredStyle:UIAlertControllerStyleAlert];
  
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
 
-    UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
+    UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
     [alert addAction:ignoreAction];
@@ -53,7 +53,7 @@ preferredStyle:UIAlertControllerStyleAlert];
  
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
 
-    UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
+    UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
     [alert addAction:ignoreAction];
