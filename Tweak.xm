@@ -17,11 +17,8 @@
     NSString *appName = [[NSBundle mainBundle] localizedInfoDictionary][@"CFBundleDisplayName"];
     NSString *message = [NSString stringWithFormat:@"“%@” is requesting access to your location.", appName];
 
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message
-preferredStyle:UIAlertControllerStyleAlert];
- 
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
-
     UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
@@ -46,11 +43,8 @@ preferredStyle:UIAlertControllerStyleAlert];
     NSString *appName = [[NSBundle mainBundle] localizedInfoDictionary][@"CFBundleDisplayName"];
     NSString *message = [NSString stringWithFormat:@"“%@” is requesting access to your location.", appName];
 
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message
-preferredStyle:UIAlertControllerStyleAlert];
- 
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Location Requested" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* respondAction = [UIAlertAction actionWithTitle:@"Respond" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {window.hidden = YES;%orig;}];
-
     UIAlertAction* ignoreAction = [UIAlertAction actionWithTitle:@"Ignore for now" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {window.hidden = YES;}];
  
     [alert addAction:respondAction];
